@@ -1,92 +1,94 @@
 <!DOCTYPE html>
-<body>
-  <header>
-    <h1>Why Web Dev?</h1>
-  </header>
-  <nav>
-    <a href="index.html"> Home </a>
-    <a href="opportunities.html"> Web Dev Opportunities </a>
-    <a href="other-careers.html"> Other Coding Careers </a>
-  </nav>
-  <main>
-    <p>There are plenty of way to learn coding, but here are some reasons why we focus on web dev.</p>
-    <ul>
-      <li>You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript.</li>
-      <li>You can be creative with the visual aesthetic of your applications as well as solve problems in coding.</li>
-      <li>You can build useful applications to make money, help others, or just make your own life easier.</li>
-      <li>Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship.</li>
-    </ul>
-    <img src="html-logo.svg.svg" />
-  </main>
-  <footer>
-    <p>&copy; Emma Fitzgerald 2023</p>
-  </footer>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Web Dev</title>
-    <link rel="icon" href="faviconio-logo.zip" />
-  </head>
-</body>
-<style>
-  * {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+<html>
+  <body>
+    <header>
+      <h1>Why Web Dev?</h1>
+    </header>
+    <nav>
+      <a href="index.html"> Home </a>
+      <a href="opportunities.html"> Web Dev Opportunities </a>
+      <a href="other-careers.html"> Other Coding Careers </a>
+    </nav>
+    <main>
+      <p>There are plenty of way to learn coding, but here are some reasons why we focus on web dev.</p>
+      <ul>
+        <li>You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript.</li>
+        <li>You can be creative with the visual aesthetic of your applications as well as solve problems in coding.</li>
+        <li>You can build useful applications to make money, help others, or just make your own life easier.</li>
+        <li>Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship.</li>
+      </ul>
+      <img src="html-logo.svg.svg" alt="htmllogo" />
+    </main>
+    <footer>
+      <p>&copy; Emma Fitzgerald 2023</p>
+    </footer>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Web Dev</title>
+      <link rel="icon" href="faviconio-logo.zip" />
+    </head>
+  </body>
+  <style>
+    * {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
 
-  h1 {
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+    h1 {
+      text-align: center;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
 
-  p {
-    margin-left: 12px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+    p {
+      margin-left: 12px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
 
-  a {
-    text-decoration: none;
-    display: block;
-    color: black;
-    border: 1px solid black;
-    border-radius: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-left: 12px;
-    width: 200px;
-    text-align: center;
-  }
+    a {
+      text-decoration: none;
+      display: block;
+      color: black;
+      border: 1px solid black;
+      border-radius: 0.5em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      margin-left: 12px;
+      width: 200px;
+      text-align: center;
+    }
 
-  a:hover {
-    color: white;
-    background-color: rgb(251, 103, 23);
-  }
+    a:hover {
+      color: white;
+      background-color: rgb(251, 103, 23);
+    }
 
-  li {
-    list-style-type: "\1F7E0";
-    margin-left: 12px;
-  }
-  img {
-    width: 25rem;
-    margin-left: 12px;
-  }
-  body {
-    display: grid;
-    grid:
-      " h    .    .  " auto
-      " n    m    .  " auto
-      " f    f    f  " auto
-      / 3fr 5fr 1fr;
-  }
-  header {
-    grid-area: h;
-  }
-  nav {
-    grid-area: n;
-    margin-left: 8rem;
-  }
-  main {
-    grid-area: m;
-  }
-  footer {
-    grid-area: f;
-  }
-</style>
+    li {
+      list-style-type: "\1F7E0";
+      margin-left: 12px;
+    }
+    img {
+      width: 25rem;
+      margin-left: 12px;
+    }
+    body {
+      display: grid;
+      grid:
+        " h    .    .  " auto
+        " n    m    .  " auto
+        " f    f    f  " auto
+        / 3fr 5fr 1fr;
+    }
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+      margin-left: 8rem;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+  </style>
+</html>
