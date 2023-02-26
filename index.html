@@ -62,4 +62,25 @@
     width: 25rem;
     margin-left: 12px;
   }
+  body {
+    display: grid;
+    grid:
+      " h    .    .  " auto
+      " n    m    .  " auto
+      " f    f    f  " auto
+      / 3fr 5fr 1fr;
+  }
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+    margin-left: 8rem;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
 </style>
