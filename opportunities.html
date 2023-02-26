@@ -52,4 +52,26 @@
   li {
     list-style-type: "\1F7E1";
   }
+  body {
+    display: grid;
+    grid:
+      " h    .    .  " auto
+      " n    m    .  " auto
+      " f    f    f  " auto
+      / 3fr 5fr 1fr;
+  }
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+    margin-left: 8rem;
+  }
+  main {
+    grid-area: m;
+    margin-left: 2rem;
+  }
+  footer {
+    grid-area: f;
+  }
 </style>
