@@ -35,22 +35,30 @@
   </body>
 </html>
 <style>
-  p {
-    margin-left: 12px;
-    font-family: "Quicksand", sans-serif;
+  body {
+    background-color: rgb(187, 205, 254);
+    display: grid;
+    grid:
+      " h    .    .  " auto
+      " n    m    .  " auto
+      " f    f    f  " auto
+      / 3fr 5fr 1fr;
   }
-  li {
-    list-style-type: "\1f535";
-    margin-bottom: 10px;
-    padding-left: 12px;
-    font-family: "Quicksand", sans-serif;
+  header {
+    grid-area: h;
   }
-
   h1 {
     text-align: center;
     font-family: "Tilt Warp", cursive;
   }
-
+  nav {
+    grid-area: n;
+    margin-left: 8rem;
+  }
+  a:hover {
+    color: white;
+    background-color: rgb(23, 118, 251);
+  }
   a {
     text-decoration: none;
     display: block;
@@ -64,33 +72,22 @@
     margin-bottom: 5px;
     font-family: "Mulish", sans-serif;
   }
-
-  a:hover {
-    color: white;
-    background-color: rgb(23, 118, 251);
-  }
-  img {
-    width: 30rem;
-  }
-  body {
-    background-color: rgb(187, 205, 254);
-    display: grid;
-    grid:
-      " h    .    .  " auto
-      " n    m    .  " auto
-      " f    f    f  " auto
-      / 3fr 5fr 1fr;
-  }
-  header {
-    grid-area: h;
-  }
-  nav {
-    grid-area: n;
-    margin-left: 8rem;
-  }
   main {
     grid-area: m;
     margin-left: 2rem;
+  }
+  p {
+    margin-left: 12px;
+    font-family: "Quicksand", sans-serif;
+  }
+  li {
+    list-style-type: "\1f535";
+    margin-bottom: 10px;
+    padding-left: 12px;
+    font-family: "Quicksand", sans-serif;
+  }
+  img {
+    width: 30rem;
   }
   footer {
     grid-area: f;
