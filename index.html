@@ -33,16 +33,30 @@
   </body>
 </html>
 <style>
+  body {
+    background-color: rgb(246, 211, 169);
+    display: grid;
+    grid:
+      " h    .    .  " auto
+      " n    m    .  " auto
+      " f    f    f  " auto
+      / 3fr 5fr 1fr;
+  }
+  header {
+    grid-area: h;
+  }
   h1 {
     text-align: center;
     font-family: "Tilt Warp", cursive;
   }
-
-  p {
-    margin-left: 12px;
-    font-family: "Quicksand", sans-serif;
+  nav {
+    grid-area: n;
+    margin-left: 8rem;
   }
-
+  a:hover {
+    color: white;
+    background-color: rgb(251, 103, 23);
+  }
   a {
     text-decoration: none;
     display: block;
@@ -58,9 +72,12 @@
     font-family: "Mulish", sans-serif;
   }
 
-  a:hover {
-    color: white;
-    background-color: rgb(251, 103, 23);
+  main {
+    grid-area: m;
+  }
+  p {
+    margin-left: 12px;
+    font-family: "Quicksand", sans-serif;
   }
 
   li {
@@ -70,28 +87,10 @@
     padding-left: 12px;
     font-family: "Quicksand", sans-serif;
   }
+
   img {
     width: 25rem;
     margin-left: 12px;
-  }
-  body {
-    background-color: rgb(246, 211, 169);
-    display: grid;
-    grid:
-      " h    .    .  " auto
-      " n    m    .  " auto
-      " f    f    f  " auto
-      / 3fr 5fr 1fr;
-  }
-  header {
-    grid-area: h;
-  }
-  nav {
-    grid-area: n;
-    margin-left: 8rem;
-  }
-  main {
-    grid-area: m;
   }
   footer {
     grid-area: f;
