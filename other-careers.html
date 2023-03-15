@@ -13,9 +13,9 @@
       <h1>Other careers</h1>
     </header>
     <nav>
-      <a href="index.html"> Home </a>
-      <a href="opportunities.html"> Web Dev Opportunities </a>
-      <a href="other-careers.html"> Other Coding Careers </a>
+      <a class=".active" href="index.html"> Home </a>
+      <a class=".active" href="opportunities.html"> Web Dev Opportunities </a>
+      <a class=".active" href="other-careers.html"> Other Coding Careers </a>
     </nav>
     <main>
       <h2>Careers</h2>
@@ -46,17 +46,26 @@
       " f    f    f  " auto
       / 3fr 5fr 1fr;
   }
+
   header {
     grid-area: h;
   }
-  h1 {
-    text-align: center;
-    font-family: "Tilt Warp", cursive;
+  main {
+    grid-area: m;
+    margin-left: 2rem;
   }
   nav {
     grid-area: n;
     margin-left: 8rem;
   }
+  footer {
+    grid-area: f;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Tilt Warp", cursive;
+  }
+
   a:hover {
     color: white;
     background-color: rgb(23, 118, 251);
@@ -74,9 +83,9 @@
     margin-bottom: 5px;
     font-family: "Mulish", sans-serif;
   }
-  main {
-    grid-area: m;
-    margin-left: 2rem;
+  .active {
+    background-color: aliceblue;
+    font-weight: bold;
   }
   h2 {
     font-family: "Mulish", sans-serif;
@@ -93,8 +102,5 @@
   }
   img {
     width: 30rem;
-  }
-  footer {
-    grid-area: f;
   }
 </style>
