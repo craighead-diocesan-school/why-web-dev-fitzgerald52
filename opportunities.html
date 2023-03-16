@@ -14,7 +14,7 @@
     </header>
     <nav>
       <a href="index.html"> Home </a>
-      <a href="opportunities.html"> Web Dev Opportunities </a>
+      <a class="active" href="opportunities.html"> Web Dev Opportunities </a>
       <a href="other-careers.html"> Other Coding Careers </a>
     </nav>
     <main>
@@ -45,14 +45,21 @@
     header {
       grid-area: h;
     }
-
-    h1 {
-      text-align: center;
-      font-family: "Tilt Warp", cursive;
-    }
     nav {
       grid-area: n;
       margin-left: 8rem;
+    }
+    main {
+      grid-area: m;
+      margin-left: 2rem;
+    }
+
+    footer {
+      grid-area: f;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Tilt Warp", cursive;
     }
     a:hover {
       color: white;
@@ -71,9 +78,9 @@
       margin-bottom: 5px;
       font-family: "Mulish", sans-serif;
     }
-    main {
-      grid-area: m;
-      margin-left: 2rem;
+    .active {
+      text-decoration: underline;
+      font-weight: bold;
     }
     h2 {
       font-family: "Mulish", sans-serif;
@@ -90,9 +97,6 @@
     }
     img {
       width: 30rem;
-    }
-    footer {
-      grid-area: f;
     }
   </style>
 </html>
